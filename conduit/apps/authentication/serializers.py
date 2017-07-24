@@ -70,11 +70,11 @@ class UserSerializer(serializers.ModelSerializer):
         read_only_fields = ('token',)
     
     def update(self, instance, validated_data):
-        password = validated_data('password', None)
+        password = validated_data.pop('password', None)
 
     
         for (key, value) in validated_data.items():
-            setattrr(instance, key, value)
+            setattr(instance, key, value)
         
         if password is not None:
             instance.set_password(password)
