@@ -2,10 +2,12 @@
 
 ## Installation
 
-1. Clone this repository: `git clone git@github.com:brwr/conduit-django.git`.
+1. Clone this repository: `git clone https://github.com/vaibhav-rbs/conduit-django/`.
 2. `cd` into `conduit-django`: `cd conduit-django`.
 3. Install [pyenv](https://github.com/yyuu/pyenv#installation).
+    3.1 `brew update; brew install pyenv`
 4. Install [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv#installation).
+    4.1 `brew install pyenv-virtualenv`
 5. Install Python 3.5.1: `pyenv install 3.5.1`.
 6. Create a new virtualenv called "conduit": `pyenv virtualenv 3.5.1 conduit`.
 7. Set the local virtualenv to "conduit": `pyenv local conduit`.
