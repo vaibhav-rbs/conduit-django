@@ -1,6 +1,6 @@
 from django.db import models
 
-from conduit.apps.models import TimestampModel
+from conduit.apps.core.models import TimestampModel
 
 class Profile(TimestampModel):
     user = models.OneToOneField(
