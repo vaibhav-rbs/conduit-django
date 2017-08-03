@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/vaibhavchauhan/.pyenv/versions/3.5.1/bin/python3"
+    "python.pythonPath": "/Users/vaibhavchauhan/.pyenv/versions/conduit/bin/python",
+    "python.autoComplete.extraPaths": ["/Users/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages"]
 }
