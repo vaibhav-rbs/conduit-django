@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/Users/vaibhavchauhan/.pyenv/versions/conduit/bin/python",
-    "python.autoComplete.extraPaths": ["/Users/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages"]
+    "python.pythonPath": "/home/vaibhavchauhan/.pyenv/versions/conduit/bin/python",
+    "python.autoComplete.extraPaths": ["/Users/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages","/home/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages"]
 }
