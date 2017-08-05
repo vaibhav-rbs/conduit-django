@@ -18,3 +18,11 @@ If all went well then your command line prompt should now start with `(conduit)`
 If your command line prompt does not start with `(conduit)` at this point, try running `pyenv activate conduit` or `cd ../conduit-django`. 
 
 If pyenv is still not working, visit us in the Thinkster Slack channel so we can help you out.
+NOTE:
+please include the following in ~/.zshrc
+
+`export PATH="/home/vaibhavchauhan/.pyenv/bin:$PATH"`
+`eval "$(pyenv init -)"`
+`eval "$(pyenv virtualenv-init -)"`
+
+
