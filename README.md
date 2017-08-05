@@ -27,4 +27,3 @@ please include the following in ~/.zshrc
 `export PATH="/home/vaibhavchauhan/.pyenv/bin:$PATH"`
 `eval "$(pyenv init -)"`
 `eval "$(pyenv virtualenv-init -)"`
-
