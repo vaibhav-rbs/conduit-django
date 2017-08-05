@@ -1,5 +1,8 @@
 # Conduit
 
+# debian specific
+please run the following to make sure you maeeting nearly all the dependencies.
+`sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev`
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/vaibhav-rbs/conduit-django/`.
@@ -18,3 +21,10 @@ If all went well then your command line prompt should now start with `(conduit)`
 If your command line prompt does not start with `(conduit)` at this point, try running `pyenv activate conduit` or `cd ../conduit-django`. 
 
 If pyenv is still not working, visit us in the Thinkster Slack channel so we can help you out.
+NOTE:
+please include the following in ~/.zshrc
+
+`export PATH="/home/vaibhavchauhan/.pyenv/bin:$PATH"`
+`eval "$(pyenv init -)"`
+`eval "$(pyenv virtualenv-init -)"`
+
