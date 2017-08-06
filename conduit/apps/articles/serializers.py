@@ -23,7 +23,6 @@ class ArticleSerializer(serializers.ModelSerializer):
             'title',
             'updatedAt',
         )
-
     def create(self, validated_data):
         author = self.context.get('author', None)
         return Article.objects.create(author=author, **validated_data)

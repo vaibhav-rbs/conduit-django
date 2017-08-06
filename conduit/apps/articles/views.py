@@ -4,7 +4,7 @@ from rest_framework.response import Response
 
 from .models import Article
 from .renderers import ArticleJSONRenderer
-from .serializer import ArticleSerializer
+from .serializers import ArticleSerializer
 
 class ArticleViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
     queryset = Article.objects.select_related('author','author__user')

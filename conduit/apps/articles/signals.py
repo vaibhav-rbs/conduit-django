@@ -21,4 +21,8 @@ def add_slug_to_article_if_not_exists(sender, instance, *args, **kwargs):
             parts = slug.split('-')
 
             if len(parts) is 1:
-                slug = slug[:MAXIMUM_SLUG_LENGTH]
+                slug = slug[:MAXIMUM_SLUG_LENGTH - len(unique) - 1]
+            else:
+                slug = '-'.join(parts[:-1])
+        instance.slug = slug + '-' + unique
+            
