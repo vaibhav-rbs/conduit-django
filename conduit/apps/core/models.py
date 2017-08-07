@@ -1,6 +1,6 @@
 from django.db import models
 
-class TimestampModel(models.Model):
+class TimestampedModel(models.Model):
 
     created_at = models.DateTimeField(auto_now=True)
 

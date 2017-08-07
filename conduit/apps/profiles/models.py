@@ -1,8 +1,8 @@
 from django.db import models
 
-from conduit.apps.core.models import TimestampModel
+from conduit.apps.core.models import TimestampedModel
 
-class Profile(TimestampModel):
+class Profile(TimestampedModel):
     user = models.OneToOneField(
         'authentication.User', on_delete=models.CASCADE)
     

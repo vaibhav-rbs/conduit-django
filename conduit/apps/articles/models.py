@@ -1,7 +1,7 @@
 from django.db import models
-from conduit.apps.core.models import TimestampModel
+from conduit.apps.core.models import TimestampedModel
 
-class Article(TimestampModel):
+class Article(TimestampedModel):
     slug = models.SlugField(db_index=True, max_length=255, unique=True)
     title = models.SlugField(db_index=True, max_length=255)
 

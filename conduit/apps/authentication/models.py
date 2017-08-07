@@ -8,7 +8,7 @@ from django.contrib.auth.models import (
     )
 
 from django.db import models
-from conduit.apps.core.models import TimestampModel
+from conduit.apps.core.models import TimestampedModel
 
 class UserManager(BaseUserManager):
 
@@ -36,7 +36,7 @@ class UserManager(BaseUserManager):
 
         return user
 
-class User(AbstractBaseUser, PermissionsMixin, TimestampModel):
+class User(AbstractBaseUser, PermissionsMixin, TimestampedModel):
     username = models.CharField(db_index=True, max_length=255, unique=True)
     email = models.EmailField(db_index=True, unique=True)
     is_active = models.BooleanField(default=True)
