@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
+
 class ArticlesAppConfig(AppConfig):
     name = 'conduit.apps.articles'
     label = 'articles'
@@ -8,4 +9,4 @@ class ArticlesAppConfig(AppConfig):
     def ready(self):
         import conduit.apps.articles.signals
 
-defualt_app_config = 'conduit.apps.articles.ArticleAppConfig'
+default_app_config = 'conduit.apps.articles.ArticlesAppConfig'
