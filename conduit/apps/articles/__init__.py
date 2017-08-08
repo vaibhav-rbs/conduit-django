@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
-class AtriclesAppConfig(AppConfig):
+class ArticlesAppConfig(AppConfig):
     name = 'conduit.apps.articles'
     label = 'articles'
     verbose_name = 'Articles'
