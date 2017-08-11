@@ -1,11 +1,11 @@
-from rest_framework import mixins, status, viewsets
+from rest_framework import generics ,mixins, status, viewsets
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
-from .models import Article
-from .renderers import ArticleJSONRenderer
-from .serializers import ArticleSerializer
+from .models import Article, Comment
+from .renderers import ArticleJSONRenderer, CommentJSONRenderer
+from .serializers import ArticleSerializer, CommentSerializer
 
 class ArticleViewSet(mixins.CreateModelMixin,mixins.ListModelMixin,
                     mixins.RetrieveModelMixin ,viewsets.GenericViewSet):
