@@ -50,7 +50,6 @@ class CommentSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         article = self.context['article']
         author = self.context['author']
-        import pdb;pdb.set_trace()
         return Comment.objects.create(author=author, article=article,**validated_data)
     
     def get_created_at(self, instance):
