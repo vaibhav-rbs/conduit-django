@@ -25,7 +25,7 @@ class Article(TimestampedModel):
 class Comment(TimestampedModel):
     body = models.TextField()
 
-    articles = models.ForeignKey(
+    article = models.ForeignKey(
             'articles.Article',related_name='comments', 
             on_delete=models.CASCADE
     )
