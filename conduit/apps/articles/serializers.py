@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from conduit.apps.profiles.serializers import ProfileSerializer
 
-from .models import Article, Comment
+from .models import Article, Comment, Tag
 from .relations import TagRelatedField
 
 class ArticleSerializer(serializers.ModelSerializer):
@@ -85,3 +85,12 @@ class CommentSerializer(serializers.ModelSerializer):
     def get_updated_at(self, instance):
         return instance.updated_at.isoformat()
 
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tag
+        fields = ('tag',)
+    
+    def to_representation(self, obj):
+        return obj.tag
+
+    
