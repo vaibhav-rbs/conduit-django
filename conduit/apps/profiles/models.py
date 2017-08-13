@@ -38,4 +38,4 @@ class Profile(TimestampedModel):
         self.favorites.remove(article)
     
     def has_favorited(self, article):
-        return self.favorite.filter(pk=article.pk).exists()
+        return self.favorites.filter(pk=article.pk).exists()
