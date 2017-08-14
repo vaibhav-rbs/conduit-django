@@ -1,9 +1,9 @@
 from conduit.apps.core.renderers import ConduitJSONRenderer
 
 class ArticleJSONRenderer(ConduitJSONRenderer):
-    object_label = 'article'
-    object_label_plural = 'objects'
+    pagination_object_label = 'article'
+    pagination_label_count = 'articlesCount'
 
 class CommentJSONRenderer(ConduitJSONRenderer):
-    object_label = 'comment'
-    object_label_plural = 'comments'   
+    pagination_object_label = 'comment'
+    pagination_count_label = 'commentsCount'   
