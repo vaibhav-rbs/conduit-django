@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/vaibhavchauhan/.pyenv/versions/conduit/bin/python3",
+    "python.pythonPath": "/Users/vector8188/.virtualenvs/conduit-django-q2Vn0pO2/bin/python3.6",
     "python.autoComplete.extraPaths": [
         "/Users/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages",
         "/home/vaibhavchauhan/.pyenv/versions/conduit/lib/python3.5/site-packages"

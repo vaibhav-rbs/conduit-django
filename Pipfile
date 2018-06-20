@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-extensions = "==1.6.7"
+djangorestframework = "==3.3.3"
+six = "==1.10.0"
+Django = "==1.9.6"
+PyJWT = "==1.4.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
